@@ -1,1 +1,69 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>Registration form</h1>
+    <form>
+      <label for="username">
+        Username
+        <input type="text" id="username" required />
+      </label>
+      <label for="password">
+        Password
+        <input type="password" id="password" required />
+      </label>
+      <label for="email">
+        Email
+        <input type="text" id="email" required />
+      </label>
+
+      <h2>Which taxi do you require?</h2>
+      <label for="car">
+        <input type="radio" name="car" value="taxi" required />
+        Car
+      </label>
+      <label for="van">
+        <input type="radio" name="van" value="taxi" required />
+        Van
+      </label>
+      <label for="tuktuk">
+        <input type="radio" name="tuktuk" value="taxi" required />
+        Tuk Tuk
+      </label>
+
+      <h2>Choose your extras</h2>
+      <label for="babyseat">
+        <input type="checkbox" name="babyseat" value="babyseat" required />
+        Baby seat
+      </label>
+      <label for="wheelchair">
+        <input type="checkbox" name="wheelchair" value="wheelchair" required />
+        Wheelchair access
+      </label>
+      <label for="privacywin">
+        <input type="checkbox" name="privacywin" value="privacywin" required />
+        Privacy windows
+      </label>
+
+      <h2>Where would you like us to pick you up?</h2>
+      <label for="pickup">
+        Pickup Location:
+        <select name="pickup">
+          <option value="">Select One</option>
+          <option value="saint-laurent">Saint-Laurent</option>
+          <option value="westisland">West Island</option>
+          <option value="laval">Laval</option>
+          <option value="downtownmtl">Downtown Montreal</option>
+        </select>
+      </label>
+
+      <h2>Additional Instructions</h2>
+      <label for="instructions">
+        Special
+        <textarea name="instrucions" id="instructions" cols="20" rows="2">
+provide special instructions here
+        </textarea>
+      </label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
